@@ -5,8 +5,8 @@ import matplotlib.pyplot as plt
 
 # Fungsi untuk memuat data
 def load_data():
-    day_df = pd.read_csv("/content/drive/My Drive/MC03 Proyek Analisis Data/day.csv")
-    hour_df = pd.read_csv("/content/drive/My Drive/MC03 Proyek Analisis Data/hour.csv")
+    day_df = pd.read_csv("data/day.csv")
+    hour_df = pd.read_csv("data/hour.csv")
     day_df['dteday'] = pd.to_datetime(day_df['dteday'])
     hour_df['dteday'] = pd.to_datetime(hour_df['dteday'])
     return day_df, hour_df
